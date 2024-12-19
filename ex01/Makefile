@@ -1,9 +1,9 @@
-NAME= convert
+NAME= ex01
 
 CXX= c++
 CXXFLAGS= -Wall -Werror -Wextra -std=c++98 -g
 
-SRC= ScalarConverter.cpp main.cpp
+SRC= Serializer.cpp main.cpp
 
 OBJ_DIR= objects
 OBJ= $(addprefix $(OBJ_DIR)/, $(SRC:%.cpp=%.o))
