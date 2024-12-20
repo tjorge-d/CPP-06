@@ -25,6 +25,9 @@ int	main()
 	value = Serializer::serialize(&GT3);
 	GT3_replica = Serializer::deserialize(value);
 
+	//value = (uintptr_t)(&GT3);
+	//GT3_replica = (Data*)value;
+
 	std::cout << std::endl << "----- REPLICA SPECIFICATIONS -----" << std::endl;
 	std::cout << "BRAND:" << GT3_replica->brand << std::endl; 
 	std::cout << "MODEL: " << GT3_replica->model << std::endl;
